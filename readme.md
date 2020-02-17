@@ -87,6 +87,18 @@ Apply canary deployment for version 2
 
     kubectl apply -f  ./istio-1.4.4/samples/bookinfo/networking/virtual-service-reviews-80-20.yaml
 
+# Helm
+
+Package manager for kubernetes
+
+Install and setup drupal with one-line
+
+    kubectl create namespace drupal
+    helm install drupal stable/drupal -n drupal
+    kubectl get svc -n drupal
+
+Check the site at http://*EXTERNAL-IP*
+
 # Cleanup
 
     minikube delete
