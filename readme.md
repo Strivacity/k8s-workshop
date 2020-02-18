@@ -4,7 +4,7 @@ Grab necessary tools and resources:
 
     git clone git@github.com:Strivacity/k8s-workshop.git
     cd k8s-workshop
-    export PATH=`pwd`/bin:`pwd`/istio-1.4.4/bin/:${PATH}
+    export PATH=`pwd`/bin/`uname`:${PATH}
 
 Initialize a local kubernetes cluster:
 
@@ -19,11 +19,11 @@ Install istio with demo profile, which will setup istio with tools for monitorin
 
 Check running system with k9s (new tab/window):
 
-    ./bin/k9s
+    ./bin/`uname`/k9s
 
 Expose internal IPs with minikube (new tab/window):
 
-    ./bin/minikube tunnel
+    ./bin/`uname`/minikube tunnel
 
 List the available services:
 
